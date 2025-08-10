@@ -1,0 +1,227 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>BlueBird Digitals — Lead-Driving Digital Marketing</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Results-driven digital marketing, lead generation & web design. Clean UI, fast performance, and measurable growth.">
+  <style>
+    :root{
+      --bg:#f7fafc; --card:#ffffff; --muted:#6b7280; --brand:#0066ff; --accent:#0ea5a4; --radius:12px;
+      --container:1100px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:var(--bg);color:#0f172a}
+    a{color:var(--brand);text-decoration:none}
+    .wrap{max-width:var(--container);margin:0 auto;padding:24px}/* Header */
+header{background:linear-gradient(90deg, rgba(255,255,255,0.6), rgba(255,255,255,0.6));backdrop-filter: blur(6px);position:sticky;top:0;z-index:50}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--accent));display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
+nav ul{display:flex;gap:18px;align-items:center;margin:0;padding:0;list-style:none}
+.btn{background:var(--brand);color:#fff;padding:10px 14px;border-radius:10px;border:none;cursor:pointer;font-weight:600}
+.ghost{background:transparent;border:1px solid rgba(15,23,42,0.06);padding:9px 12px;border-radius:10px}
+
+/* Hero */
+.hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;padding:48px 0}
+.hero h1{font-size:34px;line-height:1.05;margin:0 0 12px}
+.hero p{color:var(--muted);margin:0 0 18px}
+.kpis{display:flex;gap:14px;margin-top:18px}
+.kpi{background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(2,6,23,0.06);min-width:120px}
+
+.card{background:var(--card);padding:20px;border-radius:var(--radius);box-shadow:0 10px 30px rgba(2,6,23,0.06)}
+.hero-form input, .hero-form textarea{width:100%;padding:12px;border-radius:8px;border:1px solid #e6eef8;margin-bottom:10px;font-size:14px}
+.hero-form button{width:100%}
+
+/* Services */
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:36px 0}
+.service{padding:20px;border-radius:12px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid rgba(2,6,23,0.04)}
+.service h3{margin:8px 0 6px}
+.service p{color:var(--muted);margin:0}
+
+/* Process */
+.process{display:flex;gap:12px;overflow:auto;padding-bottom:8px}
+.step{min-width:220px;padding:14px;background:linear-gradient(180deg,#fff,#fcfdff);border-radius:12px;border:1px solid rgba(2,6,23,0.04)}
+
+/* Testimonials */
+.test-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+
+/* Footer */
+footer{padding:28px 0;color:var(--muted)}
+
+/* Responsive */
+@media (max-width:980px){
+  .hero{grid-template-columns:1fr;}
+  .services{grid-template-columns:repeat(2,1fr)}
+  .test-grid{grid-template-columns:1fr}
+  nav ul{display:none}
+  .mobile-menu{display:block}
+}
+@media (max-width:520px){
+  .services{grid-template-columns:1fr}
+  .kpis{flex-direction:column}
+  .hero h1{font-size:24px}
+  .logo-mark{width:38px;height:38px}
+}
+
+/* small utilities */
+.muted{color:var(--muted)}
+.caps{font-size:12px;text-transform:uppercase;color:var(--muted);letter-spacing:1px}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="logo">
+        <div class="logo-mark">BB</div>
+        <div>
+          <div style="font-weight:700">BlueBird Digitals</div>
+          <div class="muted" style="font-size:13px">Lead generation • Performance marketing</div>
+        </div>
+      </div><nav>
+    <ul>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#process">How we work</a></li>
+      <li><a href="#clients">Clients</a></li>
+      <li><a href="#contact" class="btn">Get a Proposal</a></li>
+    </ul>
+  </nav>
+
+  <div class="mobile-menu" style="display:none">
+    <button class="ghost" id="menuBtn">Menu</button>
+  </div>
+</div>
+
+  </header>  <main class="wrap">
+    <section class="hero">
+      <div>
+        <p class="caps">Performance Marketing</p>
+        <h1>We grow your revenue with predictable leads — Paid Ads · SEO · Web Design</h1>
+        <p>Custom strategies for small & medium businesses. Clear reporting, fast setup, and measurable ROI — stop guessing, start scaling.</p><div class="kpis">
+      <div class="kpi">
+        <div style="font-weight:700">+120%</div>
+        <div class="muted" style="font-size:13px">Avg MRR growth</div>
+      </div>
+      <div class="kpi">
+        <div style="font-weight:700">500+</div>
+        <div class="muted" style="font-size:13px">Qualified leads / month</div>
+      </div>
+      <div class="kpi">
+        <div style="font-weight:700">60%</div>
+        <div class="muted" style="font-size:13px">Lower CPA (avg)</div>
+      </div>
+    </div>
+
+    <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
+      <a class="btn" href="#contact">Start Project</a>
+      <a class="ghost" href="#services">Our Services</a>
+    </div>
+
+    <div style="margin-top:28px" class="muted">Trusted by</div>
+    <div style="display:flex;gap:12px;margin-top:12px;align-items:center">
+      <div class="card" style="padding:10px;display:inline-block">Client A</div>
+      <div class="card" style="padding:10px;display:inline-block">Client B</div>
+      <div class="card" style="padding:10px;display:inline-block">Client C</div>
+    </div>
+  </div>
+
+  <aside>
+    <div class="card">
+      <h3 style="margin-top:0">Get your free proposal</h3>
+      <p class="muted" style="margin-top:0">Fill quick details — we’ll email a custom 30-day plan.</p>
+      <form class="hero-form" id="leadForm" action="#" onsubmit="return handleSubmit(event)">
+        <input type="text" id="name" placeholder="Your name" required>
+        <input type="email" id="email" placeholder="Email address" required>
+        <input type="text" id="website" placeholder="Website (optional)">
+        <button type="submit" class="btn">Request Proposal</button>
+      </form>
+    </div>
+
+    <div style="margin-top:14px;text-align:center" class="muted">Or email us at <a href="mailto:hello@bluebirddigitals.com">hello@bluebirddigitals.com</a></div>
+  </aside>
+</section>
+
+<section id="services">
+  <h2 style="margin-bottom:8px">Services we deliver</h2>
+  <p class="muted" style="margin-top:0">Focused on conversions & ROI — not vanity metrics.</p>
+
+  <div class="services">
+    <div class="service">
+      <div style="font-size:20px;font-weight:700">Paid Media (Google / Meta)</div>
+      <p class="muted">Full-funnel campaigns: prospecting, retargeting, and conversion optimisation.</p>
+    </div>
+    <div class="service">
+      <div style="font-size:20px;font-weight:700">SEO & Content</div>
+      <p class="muted">Technical SEO + content strategy to bring sustainable organic traffic.</p>
+    </div>
+    <div class="service">
+      <div style="font-size:20px;font-weight:700">Web & Landing Pages</div>
+      <p class="muted">Fast, responsive landing pages that convert — A/B testing & analytics.</p>
+    </div>
+  </div>
+</section>
+
+<section id="process" style="margin-top:28px">
+  <h2>How we work — Simple 4-step</h2>
+  <div class="process" style="margin-top:12px">
+    <div class="step"><strong>1. Audit</strong><div class="muted">Quick audit to find growth pockets.</div></div>
+    <div class="step"><strong>2. Plan</strong><div class="muted">30-day custom plan with forecasts.</div></div>
+    <div class="step"><strong>3. Execute</strong><div class="muted">Run campaigns & optimise weekly.</div></div>
+    <div class="step"><strong>4. Scale</strong><div class="muted">Scale what works — reduce CPA.</div></div>
+  </div>
+</section>
+
+<section id="clients" style="margin-top:28px">
+  <h2>Client wins</h2>
+  <div class="test-grid" style="margin-top:12px">
+    <div class="card">"Campaign helped our sales pipeline — 3x MQLs"<div class="muted" style="margin-top:8px">— Retail client</div></div>
+    <div class="card">"Lowered our CPA by 47% in 60 days"<div class="muted" style="margin-top:8px">— Education startup</div></div>
+  </div>
+</section>
+
+<section id="contact" style="margin-top:36px">
+  <div class="card" style="display:flex;gap:20px;flex-wrap:wrap;align-items:center">
+    <div style="flex:1;min-width:260px">
+      <h3 style="margin-top:0">Ready to grow?</h3>
+      <p class="muted">Tell us about your biggest marketing goal and budget. We'll reply within 48 hours with a clear plan.</p>
+    </div>
+    <form style="flex:1;min-width:260px" onsubmit="return handleSubmit(event)">
+      <input type="text" id="c_name" placeholder="Name" required>
+      <input type="email" id="c_email" placeholder="Email" required>
+      <input type="text" id="c_company" placeholder="Company / Website">
+      <button class="btn" type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+
+  </main>  <footer class="wrap">
+    <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+      <div class="muted">© <strong>BlueBird Digitals</strong> — Designed for conversions</div>
+      <div class="muted">Terms • Privacy • <a href="mailto:hello@bluebirddigitals.com">hello@</a></div>
+    </div>
+  </footer>  <script>
+    // Simple form handler (demo) — replace with real endpoint
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.querySelector('#name, #c_name')?.value || '';
+      const email = document.querySelector('#email, #c_email')?.value || '';
+      if(!name || !email){
+        alert('Please fill name and email');
+        return false;
+      }
+      alert('Thanks ' + (name||'there') + '! Your request has been received.\n(Replace this alert with real form integration)');
+      return false;
+    }
+
+    // Mobile menu toggling (basic)
+    document.getElementById('menuBtn')?.addEventListener('click', function(){
+      const nav = document.querySelector('nav ul');
+      if(nav.style.display === 'flex') nav.style.display = 'none'; else nav.style.display = 'flex';
+    });
+  </script></body>
+  </html>
